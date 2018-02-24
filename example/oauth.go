@@ -54,7 +54,6 @@ func authHandler(config oauth2.Config) func(w http.ResponseWriter, r *http.Reque
 		url := config.AuthCodeURL(state)
 		http.Redirect(w, r, url, http.StatusSeeOther)
 	}
-
 }
 
 func callbackHandler(config oauth2.Config) func(w http.ResponseWriter, r *http.Request) {

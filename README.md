@@ -7,6 +7,16 @@
 $ go get -u github.com/ikasamah/genomelink-go
 ```
 
+# Usage
+```golang
+ctx := context.Background()
+cli := genomelink.DefaultClient(ctx, "<YOUR_TOKEN>")
+
+report, _ := cli.Report(ctx, genomelink.PhenotypeNameGeneticEyeColor, genomelink.PopulationEuropean)
+
+fmt.Println(report.Summary.Text) // Tend to not have brown eyes
+```
+
 ## Run example
 ```bash
 $ go run $GOPATH/src/github.com/ikasamah/genomelink-go/example/main.go
