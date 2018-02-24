@@ -26,7 +26,7 @@ const (
 	Chromosome20 Chromosome = "chr20"
 	Chromosome21 Chromosome = "chr21"
 	Chromosome22 Chromosome = "chr22"
-	ChromosomeX  Chromosome = "chr23"
-	ChromosomeY  Chromosome = "chr24"
-	ChromosomeM  Chromosome = "chr25"
+	ChromosomeX  Chromosome = "chrX"
+	ChromosomeY  Chromosome = "chrY"
+	ChromosomeM  Chromosome = "chrM"
 )

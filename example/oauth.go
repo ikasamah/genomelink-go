@@ -22,8 +22,8 @@ var state = strconv.FormatUint(rand.Uint64(), 36)
 
 func main() {
 	port := flag.Int("port", 8080, "Listen port")
-	clientID := flag.String("client_id", os.Getenv("GENOMELINK_CLIENT_ID"), "client id, you may override by GENOMELINK_CLIENT_ID env ver.")
-	clientSecret := flag.String("client_secret", os.Getenv("GENOMELINK_CLIENT_SECRET"), "client secret, you may override by GENOMELINK_CLIENT_SECRET env ver.")
+	clientID := flag.String("client_id", os.Getenv("GENOMELINK_CLIENT_ID"), "client id, you can also use GENOMELINK_CLIENT_ID env variable.")
+	clientSecret := flag.String("client_secret", os.Getenv("GENOMELINK_CLIENT_SECRET"), "client secret, you can also use GENOMELINK_CLIENT_SECRET env variable.")
 	flag.Parse()
 
 	config := oauth2.Config{

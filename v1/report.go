@@ -11,27 +11,27 @@ import (
 )
 
 type (
-	// Report represents the response of report API
+	// Report represents the response of report API.
 	Report struct {
 		Summary    Summary    `json:"summary"`
 		Phenotype  Phenotype  `json:"phenotype"`
 		Population Population `json:"population"`
 		Scores     []Score    `json:"scores"`
 	}
-	// Summary represents the summary object in report response
+	// Summary represents the summary object in report response.
 	Summary struct {
 		Text     string   `json:"text"`
 		Score    int      `json:"score"`
 		Warnings []string `json:"warnings"`
 	}
-	// Score represents the score object in report response
+	// Score represents the score object in report response.
 	Score struct {
 		Score int    `json:"score"`
 		Text  string `json:"text"`
 	}
 )
 
-// Report fetches report API for the given phenotype and population
+// Report fetches report API for the given phenotype and population.
 func (c *Client) Report(ctx context.Context, name PhenotypeName, population Population) (Report, error) {
 	spath := fmt.Sprintf("/reports/%s/", name)
 	query := url.Values{"population": {string(population)}}
