@@ -1,5 +1,5 @@
 # genomelink-go
-[GENOME LINK](ttps://genomelink.io/developers) SDK, implemented in Go
+[GENOME LINK](https://genomelink.io/developers) SDK, implemented in Go
 
 
 # Install
