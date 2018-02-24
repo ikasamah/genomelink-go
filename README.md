@@ -9,6 +9,8 @@ $ go get -u github.com/ikasamah/genomelink-go
 
 # Usage
 ```golang
+import "github.com/ikasamah/genomelink-go/v1"
+
 ctx := context.Background()
 cli := genomelink.DefaultClient(ctx, "<YOUR_TOKEN>")
 
