@@ -1,4 +1,6 @@
-# genomelink-go
+GENOME LINK Go
+==============
+
 [![Go Documentation](http://img.shields.io/badge/go-documentation-blue.svg?style=flat-square)][godocs]
 
 [GENOME LINK](https://genomelink.io/developers) SDK, implemented in Go
