@@ -31,7 +31,9 @@ Sequence: "CACTAAGCACACAGAGAATAATGTCTAGAATCTGAGTGCCATGTTATCAAATTGTA..."
 ```
 
 ## OAuth Example
-See [Official Document](https://genomelink.io/developers/docs/tutorial-oauth-example/) first.
+See [Official Document](https://genomelink.io/developers/docs/tutorial-oauth-example/) first, and register your app.
+
+Run following.
 
 ```bash
 $ go run $GOPATH/src/github.com/ikasamah/genomelink-go/example/oauth.go -client_id <CLIENT_ID> -client_secret <CLIENT_SECRET>
