@@ -4,5 +4,5 @@ package genomelink
 type Population string
 
 const (
-	PopulationEuropean = "european"
+	PopulationEuropean Population = "european"
 )
