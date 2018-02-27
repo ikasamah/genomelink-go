@@ -26,7 +26,7 @@ fmt.Println(report.Summary.Text) // Tend to not have brown eyes
 ## Run example
 ```bash
 $ go run $GOPATH/src/github.com/ikasamah/genomelink-go/example/main.go
-Report: Genetic eye color 0 Tend to not have brown eyes
+Report: Genetic eye color, 0, Tend to not have brown eyes
 Sequence: "CACTAAGCACACAGAGAATAATGTCTAGAATCTGAGTGCCATGTTATCAAATTGTA..."
 ```
 

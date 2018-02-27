@@ -20,7 +20,7 @@ func main() {
 		return
 	}
 
-	fmt.Printf("Report: %s %d %s\n", report.Phenotype.DisplayName, report.Summary.Score, report.Summary.Text)
+	fmt.Printf("Report: %s, %d, %s\n", report.Phenotype.DisplayName, report.Summary.Score, report.Summary.Text)
 
 	sequence, err := cli.Sequence(ctx, genomelink.Region{
 		Chromosome: genomelink.Chromosome1,
